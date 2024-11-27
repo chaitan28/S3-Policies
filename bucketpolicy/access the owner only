@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowPolicyToAdminOnly",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::216989137624:root"
+            },
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::app2-dev-logs/*",
+                "arn:aws:s3:::app2-dev-logs"
+            ]
+        }
+    ]
+}
